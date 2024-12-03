@@ -328,6 +328,21 @@
             Airloss: 10
 
 - type: reagent
+  id: Substance
+  name: субстанция
+  group: Toxins
+  desc: Вы когда-нибудь мечтали стать лучшей версией себя?
+  physicalDesc: reagent-physical-desc-pungent
+  color: "#000000"
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          groups:
+            Airloss: 45
+
+- type: reagent
   id: MindbreakerToxin
   name: reagent-name-mindbreaker-toxin
   group: Toxins
